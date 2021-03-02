@@ -76,6 +76,7 @@ void uct_scopy_iface_query(uct_scopy_iface_t *iface, uct_iface_attr_t *iface_att
     iface_attr->cap.flags               = UCT_IFACE_FLAG_GET_ZCOPY |
                                           UCT_IFACE_FLAG_PUT_ZCOPY |
                                           UCT_IFACE_FLAG_PENDING   |
+					  UCT_IFACE_FLAG_ERRHANDLE_PEER_FAILURE |
                                           UCT_IFACE_FLAG_CONNECT_TO_IFACE;
     iface_attr->cap.event_flags         = UCT_IFACE_FLAG_EVENT_SEND_COMP |
                                           UCT_IFACE_FLAG_EVENT_RECV      |
